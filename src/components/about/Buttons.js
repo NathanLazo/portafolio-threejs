@@ -5,7 +5,7 @@ const Buttons = ({setSelected, selected}) => {
 
   return (
     <div className="-ml-4 flex justify-center z-50 w-full mx-auto">
-      <div className="relative -left-11 md:left-9 z-50">
+      <div className="relative -left-11 md:left-9">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon icon-tabler icon-tabler-click relative z-50 top-5 left-[18.5rem] right-0 cursor-pointer"
