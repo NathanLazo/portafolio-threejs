@@ -43,15 +43,15 @@ export default function Home() {
 
           <div className="flex flex-col space-y-96 md:space-y-0">
           {/* Projects */}
-          <div id="projects" className="h-screen w-full text-white">
+          <section id="projects" className="bg-[#001220ad]">
             <Projects />
-          </div>
+          </section>
 
 
           {/* Contact */}
-          <div id="contact" className="flex justify-center h-full pb-24 sm:py-24 my-6">
+          <section id="contact" className="flex justify-center h-full pb-24 sm:py-24 my-6 bg-[#001220ad]">
             <Contact />
-          </div>
+          </section>
           </div>
         </main>
       </div>

@@ -523,7 +523,7 @@
   #stars3:after {
     content: '';
     position: absolute;
-    top: 2200px;
+    top: 2800px;
     width: 3px;
     height: 3px;
     background: transparent;
