@@ -8,6 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+
 // Images
 import Image from "next/image";
 import GreenLemonImage from "@public/img/green-lemon.jpg";
