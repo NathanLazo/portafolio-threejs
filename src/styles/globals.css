@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Curvy lines */
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    padding: 100px 4vw;
+  }
+
+  .spacer-hero-bottom {
+    position: absolute;
+    z-index: 1;
+    aspect-ratio: 16/9;
+    width: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .layer-hero-bottom {
+    background-image: url('../curves/hero-wave-bottom.svg');
+  }
+
+  .spacer-skills-top {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .layer-skills-top {
+    background-image: url('../curves/skills-waves-top.svg');
+  }
+
+
+  /* Scroll bar */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-600;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-700;
+}
+
+
+/* Projects height */
+.project-card {
+  height: calc(100vh - 20vh);
+}
+  
