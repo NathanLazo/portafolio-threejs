@@ -16,8 +16,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 800px;
-    padding: 100px 4vw;
+    min-height: auto;
+    padding: 5px 4vw;
   }
 
   .spacer-hero-bottom {

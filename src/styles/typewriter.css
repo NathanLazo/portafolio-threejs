@@ -14,12 +14,12 @@
   }
   
   .anim-typewriter1 {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 3s steps(44) 1s 1 normal both,
       blinkTextCursor 1000ms steps(44) infinite normal;
   }
   
   .anim-typewriter2 {
-    animation: typewriter2 4s steps(44) 5s 1 normal both,
+    animation: typewriter2 4s steps(44) 4s 1 normal both,
       blinkTextCursor 1000ms steps(44) infinite normal;
   }
   

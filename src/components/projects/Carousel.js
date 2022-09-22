@@ -44,11 +44,11 @@ export default function Example() {
     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {projects.map((project) => (
         <li
-          key={project.email}
+          key={project.name}
           className="col-span-1 flex flex-col text-center bg-transparent rounded-lg shadow-2xl divide-y divide-gray-200"
         >
           <div className="flex-1 flex flex-col p-8">
-            <Image className="w-32 h-32 flex-shrink-0 mx-auto rounded-full" src={project.imageUrl} alt="" />
+            <Image className="w-32 flex-shrink-0 mx-auto rounded-full" src={project.imageUrl} alt="" />
             <h3 className="mt-6 text-gray-200 text-sm font-medium">{project.name}</h3>
             <dl className="mt-1 flex-grow flex flex-col justify-between">
               <dd className="text-gray-300 text-sm">{project.title}</dd>

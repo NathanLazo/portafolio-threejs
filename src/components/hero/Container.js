@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="w-1/2 lg:mt-24">
         <Content />
       </div>
-      <div className="w-full lg:w-1/2 h-full">
+      <div className="w-full lg:w-1/2 h-3/4">
           <Model />
       </div>
     </div>
