@@ -5,6 +5,8 @@ import SkillsContainer from "@components/skills/Container";
 import About from "@components/about/Container";
 import Contact from "@components/contact/Container";
 import Projects from "@components/projects/Container";
+import Arrow from "@components/Arrow";
+
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
         <Navbar />
 
         <main className="ml-16 bg-[#001220]">
+          <Arrow />
+
           {/* Hero */}
           <section id="home" className="bg-[#303434]">
             <div id="stars" className="absolute left-0"></div>
@@ -28,13 +32,11 @@ export default function Home() {
             <div className="spacer-hero-bottom layer-hero-bottom"></div>
           </section>
 
-
           {/* Skills */}
-          <section  className="bg-[#001220ad]">
+          <section className="bg-[#001220ad]">
             <div className="spacer-skills-top layer-skills-top z-50"></div>
             <SkillsContainer />
           </section>
-
 
           {/* About */}
           <section id="about" className="bg-[#001220ad]">
@@ -42,16 +44,18 @@ export default function Home() {
           </section>
 
           <div className="flex flex-col space-y-96 md:space-y-0">
-          {/* Projects */}
-          <section id="projects" className="bg-[#001220ad]">
-            <Projects />
-          </section>
+            {/* Projects */}
+            <section id="projects" className="bg-[#001220ad]">
+              <Projects />
+            </section>
 
-
-          {/* Contact */}
-          <section id="contact" className="flex justify-center h-full pb-24 sm:py-24 my-6 bg-[#001220ad]">
-            <Contact />
-          </section>
+            {/* Contact */}
+            <section
+              id="contact"
+              className="flex justify-center h-full pb-24 sm:py-24 my-6 bg-[#001220ad]"
+            >
+              <Contact />
+            </section>
           </div>
         </main>
       </div>
