@@ -26,36 +26,36 @@ const timeLine = [
   [
     {
       id: 1,
-      content: "Entered into the world of",
-      target: "software development",
+      content: "Entered into the world of software",
+      target: "development",
       icon: GiProcessor,
       iconBackground: "bg-blue-600",
     },
     {
       id: 2,
-      content: "Learned",
-      target: "Three.js library",
+      content: "Learned Three.js library and some",
+      target: "JavaScript",
       icon: SiThreedotjs,
       iconBackground: "bg-zinc-900",
     },
     {
       id: 3,
-      content: "Created my first",
-      target: "3D model",
+      content: "Created my first 3D model with",
+      target: "Three.js",
       icon: TbGeometry,
       iconBackground: "bg-green-500",
     },
     {
       id: 4,
-      content: "Learned",
+      content: "Finished",
       target: "JavaScript basics",
       icon: DiJavascript1,
       iconBackground: "bg-yellow-400",
     },
     {
       id: 5,
-      content: "Started to develop my own",
-      target: "3D web applications",
+      content: "Started to develop my own 3D",
+      target: "web applications",
       icon: MdOutlineWeb,
       iconBackground: "bg-green-500",
     },
@@ -114,8 +114,8 @@ const timeLine = [
     },
     {
       id: 3,
-      content: "Programming logic",
-      target: "improved",
+      content: "Got better at programming in many",
+      target: "languages",
       icon: BsCodeSlash,
       iconBackground: "bg-blue-600",
     },
@@ -144,8 +144,8 @@ const timeLine = [
     },
     {
       id: 2,
-      content: "Created my first",
-      target: "web application",
+      content: "First job developing",
+      target: "web applications",
       icon: FaLaptopCode,
       iconBackground: "bg-green-500",
     },
@@ -195,8 +195,8 @@ const timeLine = [
     },
     {
       id: 4,
-      content: "Started my",
-      target: "blockchain career",
+      content: "New job developing and creating",
+      target: "decentralized applications",
       icon: FaEthereum,
       iconBackground: "bg-orange-400",
     },
@@ -216,19 +216,19 @@ function classNames(...classes) {
 
 const TimeLine = ({ selected }) => {
   return (
-    <div className="flex justify-center">
-      <div className=" w-[28rem] z-50 rounded-xl shadow-2xl px-6 py-8">
-        <ul role="list" className="-mb-8">
+    <div className='flex justify-center'>
+      <div className=' w-[20rem] md:w-[28rem] h-[450px] z-50 rounded-xl shadow-2xl px-6 py-8'>
+        <ul role='list' className='-mb-8'>
           {timeLine[selected]?.map((event, eventIdx) => (
             <li key={event.id}>
-              <div className="relative pb-8">
+              <div className='relative pb-8'>
                 {eventIdx !== timeLine.length - 1 ? (
                   <span
-                    className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
-                    aria-hidden="true"
+                    className='absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200'
+                    aria-hidden='true'
                   />
                 ) : null}
-                <div className="relative flex space-x-3">
+                <div className='relative flex space-x-3'>
                   <div>
                     <span
                       className={classNames(
@@ -237,21 +237,21 @@ const TimeLine = ({ selected }) => {
                       )}
                     >
                       <event.icon
-                        className="h-5 w-5 text-white"
-                        aria-hidden="true"
+                        className='h-5 w-5 text-white'
+                        aria-hidden='true'
                       />
                     </span>
                   </div>
-                  <div className="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                  <div className='min-w-0 flex-1 pt-1.5 flex justify-between space-x-4'>
                     <div>
-                      <p className="text-normal text-indigo-100 text-left">
+                      <p className='text-normal text-indigo-100 text-left'>
                         {event.content}{" "}
-                        <button className="font-semibold text-purple-200 text-left">
+                        <button className='font-semibold text-purple-200 text-left'>
                           {event.target}
                         </button>
                       </p>
                     </div>
-                    <div className="text-right text-sm whitespace-nowrap text-purple-300">
+                    <div className='text-right text-sm whitespace-nowrap text-purple-300'>
                       <time>{event.date}</time>
                     </div>
                   </div>

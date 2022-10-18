@@ -24,7 +24,7 @@ const About = () => {
           <TimeLine selected={selected} />
         </div>
         <div className="w-1/2 hidden xl:block">
-          <Image src={HackerMe} alt="me" layout="intrinsic" />
+          <Image src={HackerMe} alt="me" layout="intrinsic" draggable={false} />
         </div>
       </div>
     </motion.div>
