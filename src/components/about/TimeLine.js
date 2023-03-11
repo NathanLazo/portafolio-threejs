@@ -217,7 +217,7 @@ function classNames(...classes) {
 const TimeLine = ({ selected }) => {
   return (
     <div className='flex justify-center'>
-      <div className=' w-[20rem] md:w-[28rem] h-[450px] z-50 rounded-xl shadow-2xl px-6 py-8'>
+      <div className=' w-[20rem] md:w-[28rem] h-[450px] z-50 rounded-xl px-6 py-8'>
         <ul role='list' className='-mb-8'>
           {timeLine[selected]?.map((event, eventIdx) => (
             <li key={event.id}>
