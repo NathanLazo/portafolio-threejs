@@ -34,7 +34,7 @@ const projects = [
     title: "Project incubator",
     role: "Web developer",
     imageUrl: BBSImage,
-    projectUrl: "https://blockchain-business-school.vercel.app",
+    projectUrl: "https://blockchainbusinessschool.io",
   },
 ];
 
@@ -55,14 +55,14 @@ export default function Example() {
                 className='w-32 flex-shrink-0 mx-auto rounded-full'
                 src={project.imageUrl}
                 alt=''
+                width={200}
+                height={200}
               />
-              <h3 className='mt-6 text-gray-200 text-sm font-medium'>
-                {project.name}
-              </h3>
+              <h3 className='mt-6 text-gray-200 text-sm font-medium'>{project.name}</h3>
               <dl className='mt-1 flex-grow flex flex-col justify-between'>
                 <dd className='text-gray-300 text-sm'>{project.title}</dd>
                 <dd className='mt-3'>
-                  <span className='px-2 py-1 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full'>
+                  <span className='hidden lg:block px-2 py-1 text-indigo-800 text-xs font-medium bg-indigo-100 rounded-full'>
                     {project.role}
                   </span>
                 </dd>
